@@ -5,9 +5,9 @@ import org.testng.annotations.Test;
 
 public class SubTest {
 
-    @Test
+    @Test(groups = "CalcTest")
     public void testSum() {
         Assert.assertEquals(Calculator.sub(16, 8), 8);
     }
-    
+
 }

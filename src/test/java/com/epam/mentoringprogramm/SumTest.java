@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class SumTest {
 
-    @Test
+    @Test(groups = "CalcTest")
     public void testSum() {
         Assert.assertEquals(Calculator.sum(8, 8), 16);
     }
