@@ -2,6 +2,7 @@ package com.epam.mentoringprogramm;
 
 import static org.testng.Assert.*;
 
+import com.epam.mentoringprogramm.annotations.IgnoreThisTest;
 import org.testng.annotations.Test;
 
 public class PositiveNegativeTest {
@@ -23,6 +24,7 @@ public class PositiveNegativeTest {
         assertTrue(Calculator.isPositive(value) == expectedToBePositive);
     }
 
+    @IgnoreThisTest
     @Test
     public void checkValueNegative() {
         assertTrue(Calculator.isNegative(value) == expectedToBeNegative);
