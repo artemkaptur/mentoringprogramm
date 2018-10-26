@@ -4,7 +4,7 @@
 
     <listeners>
         <listener class-name="com.epam.mentoringprogramm.listener.TestListener"></listener>
-        <listener class-name="com.epam.mentoringprogramm.listener.TestListener"></listener>
+        <listener class-name="com.epam.mentoringprogramm.listener.SuiteListener"></listener>
     </listeners>
 
     <test name="Parameter from xml test">
