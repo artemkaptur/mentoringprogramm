@@ -14,7 +14,7 @@ public class Calculator {
         return a * b;
     }
 
-    public static double div(double a, double b) {
+    public static long div(long a, long b) {
         return a / b;
     }
 
