@@ -20,13 +20,13 @@ public class SubTest {
         this.expectedResult = expectedResult;
     }
 
-    @Test(groups = "CalcTest")
-    public void testSum() {
-        Assert.assertEquals(Calculator.sub(16, 8), 8);
+    @Test()
+    public void testSub() {
+        Assert.assertEquals(Calculator.sub(16, 8), 8, "Invalid result of subtraction");
     }
 
     @DataProvider(name = "subDataProvider")
-    public static Object[][] sumDataProv() {
+    public static Object[][] subDataProv() {
         return new Object[][]{
                 {1, 1, 0},
                 {-1, -1, 0},

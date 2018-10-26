@@ -6,12 +6,12 @@ import org.testng.annotations.Test;
 
 public class DivTest {
 
-    @Test(groups = "div", dataProvider = "divDataProvider")
+    @Test(groups = "divGroup", dataProvider = "divDataProvider")
     public void testDiv(long firstValue, long secondValue, long expctedResult) {
-        Assert.assertEquals(Calculator.div(firstValue, secondValue), expctedResult);
+        Assert.assertEquals(Calculator.div(firstValue, secondValue), expctedResult, "Invalid result of division");
     }
 
-    @Test(groups = "div", expectedExceptions = ArithmeticException.class, expectedExceptionsMessageRegExp = "/ by zero")
+    @Test(groups = "divGroup", expectedExceptions = ArithmeticException.class, expectedExceptionsMessageRegExp = "/ by zero")
     public void testDivByZeroThrowsException() {
         long result = Calculator.div(1, 0);
     }
