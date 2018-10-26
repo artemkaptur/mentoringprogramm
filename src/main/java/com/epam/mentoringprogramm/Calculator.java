@@ -10,4 +10,8 @@ public class Calculator {
         return a - b;
     }
 
+    public static long mult(long a, long b) {
+        return a * b;
+    }
+
 }
