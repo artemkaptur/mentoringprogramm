@@ -1,6 +1,7 @@
 package com.epam.mentoringprogramm;
 
-import org.testng.Assert;
+import static org.testng.Assert.*;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
@@ -22,7 +23,7 @@ public class SubTest {
 
     @Test()
     public void testSub() {
-        Assert.assertEquals(Calculator.sub(16, 8), 8, "Invalid result of subtraction");
+        assertEquals(Calculator.sub(16, 8), 8, "Invalid result of subtraction");
     }
 
     @DataProvider(name = "subDataProvider")

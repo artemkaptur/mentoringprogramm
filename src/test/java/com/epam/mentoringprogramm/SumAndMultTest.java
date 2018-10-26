@@ -1,6 +1,7 @@
 package com.epam.mentoringprogramm;
 
-import org.testng.Assert;
+import static org.testng.Assert.*;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -8,12 +9,12 @@ public class SumAndMultTest {
 
     @Test(dataProvider = "sumDataProvider")
     public void testSum(long firstValue, long secondValue, long expectedResult) {
-        Assert.assertEquals(Calculator.sum(firstValue, secondValue), expectedResult, "Invalid result of sum");
+        assertEquals(Calculator.sum(firstValue, secondValue), expectedResult, "Invalid result of sum");
     }
 
     @Test(dataProvider = "multDataProvider", dependsOnMethods = "testSum")
     public void testMult(long firstValue, long secondValue, long expectedResult) {
-        Assert.assertEquals(Calculator.mult(firstValue, secondValue), expectedResult, "Invalid result of multiplication");
+        assertEquals(Calculator.mult(firstValue, secondValue), expectedResult, "Invalid result of multiplication");
     }
 
     @DataProvider(name = "sumDataProvider")

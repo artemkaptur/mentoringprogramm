@@ -1,6 +1,7 @@
 package com.epam.mentoringprogramm;
 
-import org.testng.Assert;
+import static org.testng.Assert.*;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -8,7 +9,7 @@ public class DivTest {
 
     @Test(groups = "divGroup", dataProvider = "divDataProvider")
     public void testDiv(long firstValue, long secondValue, long expctedResult) {
-        Assert.assertEquals(Calculator.div(firstValue, secondValue), expctedResult, "Invalid result of division");
+        assertEquals(Calculator.div(firstValue, secondValue), expctedResult, "Invalid result of division");
     }
 
     @Test(groups = "divGroup", expectedExceptions = ArithmeticException.class, expectedExceptionsMessageRegExp = "/ by zero")
