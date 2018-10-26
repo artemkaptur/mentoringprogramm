@@ -18,4 +18,16 @@ public class Calculator {
         return a / b;
     }
 
+    public static boolean isPositive(long value) {
+        if (value > 0)
+            return true;
+        return false;
+    }
+
+    public static boolean isNegative(long value) {
+        if (value < 0)
+            return true;
+        return false;
+    }
+
 }
