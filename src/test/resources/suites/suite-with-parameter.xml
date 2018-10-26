@@ -2,6 +2,11 @@
 
 <suite name="Suite with parameter" verbose="1">
 
+    <listeners>
+        <listener class-name="com.epam.mentoringprogramm.listener.TestListener"></listener>
+        <listener class-name="com.epam.mentoringprogramm.listener.TestListener"></listener>
+    </listeners>
+
     <test name="Parameter from xml test">
         <parameter name="message" value="Hurrey! Parametr works!"></parameter>
 
