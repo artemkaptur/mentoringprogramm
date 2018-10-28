@@ -28,7 +28,7 @@ public class CustomTransformer implements IAnnotationTransformer {
             usedAnnotations.append(ann.toString()).append(", ");
         }
 
-        logger.info(testMethod.getName() + " gets annotations: " + usedAnnotations);
+        logger.info(testMethod.getName() + " has annotations: " + usedAnnotations);
 
     }
 

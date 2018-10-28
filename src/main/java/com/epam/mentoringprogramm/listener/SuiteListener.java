@@ -2,9 +2,13 @@ package com.epam.mentoringprogramm.listener;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.IInvokedMethod;
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
+import org.testng.ITestNGMethod;
 import org.testng.xml.XmlSuite;
+
+import java.util.stream.Collectors;
 
 public class SuiteListener implements ISuiteListener {
 
@@ -20,6 +24,15 @@ public class SuiteListener implements ISuiteListener {
 
     @Override
     public void onFinish(ISuite suite) {
-        logger.info("Suite finished: " + suite.getXmlSuite().getFileName());
+        StringBuilder eachMethodDuration = new StringBuilder();
+
+        for (IInvokedMethod method : suite.getAllInvokedMethods()) {
+            eachMethodDuration.append(method.getTestMethod().getMethodName())
+                    .append(" duration ")
+                    .append(method.getTestResult().getEndMillis() - method.getTestResult().getStartMillis())
+                    .append(" milis\n");
+        }
+
+        logger.info("Suite finished: " + suite.getXmlSuite().getFileName() + "\n" + eachMethodDuration.toString());
     }
 }
