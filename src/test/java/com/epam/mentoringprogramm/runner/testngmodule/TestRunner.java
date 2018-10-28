@@ -1,4 +1,4 @@
-package com.epam.mentoringprogramm.runner;
+package com.epam.mentoringprogramm.runner.testngmodule;
 
 import com.epam.mentoringprogramm.listener.SuiteListener;
 import com.epam.mentoringprogramm.listener.TestListener;
