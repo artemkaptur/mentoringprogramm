@@ -10,7 +10,7 @@
         <parameter name="message" value="Hurrey! Parameter works!"></parameter>
 
         <classes>
-            <class name="com.epam.mentoringprogramm.DoesParametrFromSuiteWorkTest"></class>
+            <class name="com.epam.mentoringprogramm.tests.DoesParametrFromSuiteWorkTest"></class>
         </classes>
 
     </test>

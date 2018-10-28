@@ -1,6 +1,6 @@
 package com.epam.mentoringprogramm.factory;
 
-import com.epam.mentoringprogramm.PositiveNegativeTest;
+import com.epam.mentoringprogramm.tests.PositiveNegativeTest;
 import org.testng.annotations.Factory;
 
 public class PositiveNegativeTestFactory {

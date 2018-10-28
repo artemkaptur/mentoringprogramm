@@ -1,4 +1,4 @@
-package com.epam.mentoringprogramm;
+package com.epam.mentoringprogramm.tests;
 
 import static org.testng.Assert.*;
 

@@ -1,8 +1,9 @@
-package com.epam.mentoringprogramm;
+package com.epam.mentoringprogramm.tests;
 
 import static org.testng.Assert.*;
 
 import com.epam.mentoringprogramm.annotations.IgnoreThisTest;
+import com.epam.mentoringprogramm.calculator.Calculator;
 import org.testng.annotations.Test;
 
 public class PositiveNegativeTest {
