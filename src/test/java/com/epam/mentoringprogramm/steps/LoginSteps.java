@@ -30,9 +30,18 @@ public class LoginSteps {
         loginPage.getLoginForm().submitLogin();
     }
 
+    public LoginPage logout() {
+        LoginPage loginPage = new LoginPage();
+        loginPage.clickOnLogoutButton();
+        return loginPage;
+    }
+
     public boolean isLoginPerfomed() {
         LoginPage loginPage = new LoginPage();
         return loginPage.isLogoutButtonDisplayed();
     }
 
+    public boolean isLogoutPerfomed(LoginPage loginPage) {
+        return loginPage.isLoginFormDisplayed();
+    }
 }

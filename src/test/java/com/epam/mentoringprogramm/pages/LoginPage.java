@@ -30,17 +30,25 @@ public class LoginPage extends AbstractPage {
         loginForm = new LoginForm();
     }
 
+    @Override
+    public void openPage() throws OperationNotSupportedException {
+        driver.navigate().to(BASE_URL);
+    }
+
     public LoginForm getLoginForm() {
         return loginForm;
     }
 
-    @Override
-    public void openPage() throws OperationNotSupportedException {
-        driver.navigate().to(BASE_URL);
+    public void clickOnLogoutButton()
+    {
+        logoutButton.click();
     }
 
     public boolean isLogoutButtonDisplayed() {
         return wait.until(ExpectedConditions.visibilityOf(logoutButton)).isDisplayed();
     }
 
+    public boolean isLoginFormDisplayed() {
+        return getLoginForm().isDisplayed();
+    }
 }

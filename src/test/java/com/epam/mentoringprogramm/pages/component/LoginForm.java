@@ -25,4 +25,9 @@ public class LoginForm extends AbstractComponent {
     public void submitLogin() {
         submitButton.click();
     }
+
+    public boolean isDisplayed()
+    {
+        return loginField.isDisplayed()&&passwordField.isDisplayed()&&submitButton.isDisplayed();
+    }
 }

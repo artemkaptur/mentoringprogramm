@@ -9,11 +9,11 @@ import javax.naming.OperationNotSupportedException;
 
 import static org.testng.Assert.assertTrue;
 
-public class LoginTest extends BaseTest {
+public class LogoutTest extends BaseTest {
 
     private final static User TEST_USER = new User("etestuser3@mail.ru", "qwerty123456");
 
-    public LoginTest(BrowserType type) {
+    public LogoutTest(BrowserType type) {
         super(type);
     }
 
@@ -22,6 +22,7 @@ public class LoginTest extends BaseTest {
         LoginSteps loginSteps = new LoginSteps();
         loginSteps.login(loginSteps.openLoginPage(), TEST_USER);
         assertTrue(loginSteps.isLoginPerfomed());
+        assertTrue(loginSteps.isLogoutPerfomed(loginSteps.logout()));
     }
 
 }
