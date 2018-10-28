@@ -1,5 +1,7 @@
 package com.epam.mentoringprogramm.pages.component;
 
+import static com.epam.mentoringprogramm.actions.Actions.moveToElementAndClick;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -23,7 +25,7 @@ public class LoginForm extends AbstractComponent {
     }
 
     public void submitLogin() {
-        submitButton.click();
+        moveToElementAndClick(submitButton);
     }
 
     public boolean isDisplayed()

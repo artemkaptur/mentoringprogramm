@@ -1,5 +1,7 @@
 package com.epam.mentoringprogramm.pages;
 
+import static com.epam.mentoringprogramm.actions.Actions.clickOnElementUsingJSexecutor;
+
 import com.epam.mentoringprogramm.driver.DriverManager;
 import com.epam.mentoringprogramm.pages.component.LoginForm;
 import org.openqa.selenium.WebDriver;
@@ -41,7 +43,7 @@ public class LoginPage extends AbstractPage {
 
     public void clickOnLogoutButton()
     {
-        logoutButton.click();
+        clickOnElementUsingJSexecutor(logoutButton);
     }
 
     public boolean isLogoutButtonDisplayed() {
