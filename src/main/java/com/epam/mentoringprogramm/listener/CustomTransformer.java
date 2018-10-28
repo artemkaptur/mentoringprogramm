@@ -15,5 +15,4 @@ public class CustomTransformer implements IAnnotationTransformer {
             annotation.setEnabled(false);
         }
     }
-
 }

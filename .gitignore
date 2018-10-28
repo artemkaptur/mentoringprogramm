@@ -3,5 +3,6 @@
 /target/*
 
 /logs/*
+/test-output/*
 
 /mentoringprogramm.iml

@@ -3,12 +3,11 @@
 <suite name="Suite with parameter" verbose="1">
 
     <listeners>
-        <listener class-name="com.epam.mentoringprogramm.listener.TestListener"></listener>
-        <listener class-name="com.epam.mentoringprogramm.listener.SuiteListener"></listener>
+        <listener class-name="com.epam.mentoringprogramm.listener.CustomTransformer"></listener>
     </listeners>
 
     <test name="Parameter from xml test">
-        <parameter name="message" value="Hurrey! Parametr works!"></parameter>
+        <parameter name="message" value="Hurrey! Parameter works!"></parameter>
 
         <classes>
             <class name="com.epam.mentoringprogramm.DoesParametrFromSuiteWorkTest"></class>

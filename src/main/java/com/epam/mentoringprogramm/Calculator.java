@@ -19,15 +19,10 @@ public class Calculator {
     }
 
     public static boolean isPositive(long value) {
-        if (value > 0)
-            return true;
-        return false;
+        return value > 0;
     }
 
     public static boolean isNegative(long value) {
-        if (value < 0)
-            return true;
-        return false;
+        return value < 0;
     }
-
 }

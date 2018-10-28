@@ -11,7 +11,7 @@ public class DoesParametrFromSuiteWorkTest {
     @Parameters({"message"})
     @Test
     public void doesParametrFromSuiteWork(@Optional(value = "Something went wrong") String message) {
-        assertEquals(message, "Hurrey! Parametr works!", "Paramter wasn't got from suite xml");
+        assertEquals(message, "Hurrey! Parameter works!", "Paramter wasn't got from suite xml");
     }
 
 }

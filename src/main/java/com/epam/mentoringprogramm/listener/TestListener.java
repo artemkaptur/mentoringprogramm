@@ -12,12 +12,15 @@ public class TestListener implements IInvokedMethodListener {
 
     @Override
     public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
-        logger.info("method started: " + method.getTestMethod().getRealClass() + " - method - " + method.getTestMethod().getMethodName());
+        logger.info("Method started: class - " + method.getTestMethod().getRealClass() + ", method - "
+                + method.getTestMethod().getMethodName());
 
     }
 
     @Override
     public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
-        logger.info("method finished [" + testResult.getStatus() + "]: " + method.getTestMethod().getRealClass() + " - method - " + method.getTestMethod().getMethodName() + "\n");
+        logger.info("Method finished [" + testResult.getStatus() + "]: class - "
+                + method.getTestMethod().getRealClass() + ", method - "
+                + method.getTestMethod().getMethodName() + "\n");
     }
 }

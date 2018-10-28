@@ -23,7 +23,7 @@ public class SubTest {
 
     @Test()
     public void testSub() {
-        assertEquals(Calculator.sub(16, 8), 8, "Invalid result of subtraction");
+        assertEquals(Calculator.sub(valueOne, valueTwo), expectedResult, "Invalid result of subtraction");
     }
 
     @DataProvider(name = "subDataProvider")

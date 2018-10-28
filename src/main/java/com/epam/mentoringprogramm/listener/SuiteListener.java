@@ -15,12 +15,11 @@ public class SuiteListener implements ISuiteListener {
         suite.getXmlSuite().setParallel(XmlSuite.ParallelMode.METHODS);
         suite.getXmlSuite().setThreadCount(2);
 
-        logger.info("suite started: " + suite.getXmlSuite().getFileName());
+        logger.info("Suite started: " + suite.getXmlSuite().getFileName());
     }
 
     @Override
     public void onFinish(ISuite suite) {
-        logger.info("suite finished: " + suite.getXmlSuite().getFileName());
+        logger.info("Suite finished: " + suite.getXmlSuite().getFileName());
     }
-
 }
