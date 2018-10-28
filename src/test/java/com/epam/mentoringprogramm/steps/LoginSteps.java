@@ -25,9 +25,9 @@ public class LoginSteps {
     }
 
     public void login(LoginPage loginPage, User user) {
-        loginPage.sendLogin(user.getLogin());
-        loginPage.sendPassword(user.getPassword());
-        loginPage.submitLogin();
+        loginPage.getLoginForm().sendLogin(user.getLogin());
+        loginPage.getLoginForm().sendPassword(user.getPassword());
+        loginPage.getLoginForm().submitLogin();
     }
 
     public boolean isLoginPerfomed() {
