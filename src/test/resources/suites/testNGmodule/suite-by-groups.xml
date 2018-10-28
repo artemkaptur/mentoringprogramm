@@ -16,7 +16,7 @@
         </groups>
 
         <classes>
-            <class name="com.epam.mentoringprogramm.tests.DivTest"></class>
+            <class name="com.epam.mentoringprogramm.tests.calculator.DivTest"></class>
         </classes>
     </test>
 

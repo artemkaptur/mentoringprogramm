@@ -10,8 +10,8 @@
 
         <classes>
             <class name="com.epam.mentoringprogramm.factory.PositiveNegativeTestFactory"></class>
-            <class name="com.epam.mentoringprogramm.tests.SumAndMultTest"></class>
-            <class name="com.epam.mentoringprogramm.tests.SubTest"></class>
+            <class name="com.epam.mentoringprogramm.tests.calculator.SumAndMultTest"></class>
+            <class name="com.epam.mentoringprogramm.tests.calculator.SubTest"></class>
         </classes>
 
     </test>
