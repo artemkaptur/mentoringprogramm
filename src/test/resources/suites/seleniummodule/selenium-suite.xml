@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Mail.ru tests" verbose="1">
+    
+    <test name="MailTests">
+        <classes>
+            <class name="com.epam.mentoringprogramm.runner.seleniummodule.TestFactory"></class>
+        </classes>
+    </test>
+
+</suite>
