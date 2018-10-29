@@ -51,4 +51,9 @@ public class LoginSteps {
     public boolean isLogoutPerfomed(LoginPage loginPage) {
         return loginPage.isLoginFormDisplayed();
     }
+
+    public boolean isLogedAsUser(User testUser) {
+        LoginPage loginPage = new LoginPage();
+        return testUser.getLogin().equals(loginPage.getLogedUserEmail());
+    }
 }

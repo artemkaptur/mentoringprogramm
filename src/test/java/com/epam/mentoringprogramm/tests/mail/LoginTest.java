@@ -22,6 +22,7 @@ public class LoginTest extends BaseTest {
         LoginSteps loginSteps = new LoginSteps();
         loginSteps.login(loginSteps.openLoginPage(), TEST_USER);
         assertTrue(loginSteps.isLoginPerfomed());
+        assertTrue(loginSteps.isLogedAsUser(TEST_USER));
     }
 
 }

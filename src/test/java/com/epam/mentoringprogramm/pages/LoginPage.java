@@ -27,6 +27,9 @@ public class LoginPage extends AbstractPage {
     @FindBy(id = "PH_logoutLink")
     private WebElement logoutButton;
 
+    @FindBy(id = "PH_user-email")
+    private WebElement logedUserEmail;
+
     public LoginPage() {
         super();
         loginForm = new LoginForm();
@@ -41,8 +44,7 @@ public class LoginPage extends AbstractPage {
         return loginForm;
     }
 
-    public void clickOnLogoutButton()
-    {
+    public void clickOnLogoutButton() {
         clickOnElementUsingJSexecutor(logoutButton);
     }
 
@@ -52,5 +54,9 @@ public class LoginPage extends AbstractPage {
 
     public boolean isLoginFormDisplayed() {
         return getLoginForm().isDisplayed();
+    }
+
+    public String getLogedUserEmail() {
+        return logedUserEmail.getText();
     }
 }
