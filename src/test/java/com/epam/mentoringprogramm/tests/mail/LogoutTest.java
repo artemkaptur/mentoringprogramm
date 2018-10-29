@@ -4,6 +4,7 @@ import com.epam.mentoringprogramm.bo.User;
 import com.epam.mentoringprogramm.driver.BrowserType;
 import com.epam.mentoringprogramm.steps.LoginSteps;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import javax.naming.OperationNotSupportedException;
 
@@ -21,8 +22,10 @@ public class LogoutTest extends BaseTest {
     public void logoutTest() throws OperationNotSupportedException {
         LoginSteps loginSteps = new LoginSteps();
         loginSteps.login(loginSteps.openLoginPage(), TEST_USER);
-        assertTrue(loginSteps.isLoginPerfomed());
-        assertTrue(loginSteps.isLogoutPerfomed(loginSteps.logout()));
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertTrue(loginSteps.isLoginPerfomed());
+        softAssert.assertTrue(loginSteps.isLogoutPerfomed(loginSteps.logout()));
+        softAssert.assertAll();
     }
 
 }
