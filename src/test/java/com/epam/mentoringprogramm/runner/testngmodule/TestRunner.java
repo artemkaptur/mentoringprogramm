@@ -1,7 +1,7 @@
 package com.epam.mentoringprogramm.runner.testngmodule;
 
 import com.epam.mentoringprogramm.listener.SuiteListener;
-import com.epam.mentoringprogramm.listener.TestListener;
+import com.epam.mentoringprogramm.listener.InvokeMethodListener;
 import org.testng.ITestNGListener;
 import org.testng.TestListenerAdapter;
 import org.testng.TestNG;
@@ -16,7 +16,7 @@ public class TestRunner {
 
         tng.addListener((ITestNGListener) new TestListenerAdapter());
         tng.addListener((ITestNGListener) new SuiteListener());
-        tng.addListener((ITestNGListener) new TestListener());
+        tng.addListener((ITestNGListener) new InvokeMethodListener());
 
         XmlSuite suite = new XmlSuite();
         suite.setName("CalculatorTestsSuite");

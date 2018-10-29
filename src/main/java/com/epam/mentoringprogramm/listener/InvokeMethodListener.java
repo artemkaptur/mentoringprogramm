@@ -6,7 +6,7 @@ import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestResult;
 
-public class TestListener implements IInvokedMethodListener {
+public class InvokeMethodListener implements IInvokedMethodListener {
 
     private static Logger logger = LogManager.getLogger();
 

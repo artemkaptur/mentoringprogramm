@@ -3,7 +3,7 @@
 <suite name="Mail.ru tests" verbose="1" parallel="classes" thread-count="4">
 
     <listeners>
-        <listener class-name="com.epam.mentoringprogramm.listener.TestListener"></listener>
+        <listener class-name="com.epam.mentoringprogramm.listener.InvokeMethodListener"></listener>
     </listeners>
     
     <test name="MailTests">
