@@ -1,6 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Mail.ru tests" verbose="1">
+
+    <listeners>
+        <listener class-name="com.epam.mentoringprogramm.listener.TestListener"></listener>
+    </listeners>
     
     <test name="MailTests">
         <classes>

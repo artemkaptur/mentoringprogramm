@@ -18,7 +18,7 @@ public class LogoutTest extends BaseTest {
     }
 
     @Test
-    public void loginTest() throws OperationNotSupportedException {
+    public void logoutTest() throws OperationNotSupportedException {
         LoginSteps loginSteps = new LoginSteps();
         loginSteps.login(loginSteps.openLoginPage(), TEST_USER);
         assertTrue(loginSteps.isLoginPerfomed());

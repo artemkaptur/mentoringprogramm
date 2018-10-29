@@ -5,10 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.testng.IInvokedMethod;
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
-import org.testng.ITestNGMethod;
 import org.testng.xml.XmlSuite;
-
-import java.util.stream.Collectors;
 
 public class SuiteListener implements ISuiteListener {
 
