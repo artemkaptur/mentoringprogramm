@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Mail.ru tests" verbose="1">
+<suite name="Mail.ru tests" verbose="1" parallel="classes" thread-count="4">
 
     <listeners>
         <listener class-name="com.epam.mentoringprogramm.listener.TestListener"></listener>
